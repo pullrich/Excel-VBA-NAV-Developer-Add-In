@@ -1,0 +1,24 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+	<ribbon>
+		<tabs>
+			<tab id="navTools" label="NAV Developer Add-in">
+				<group id="convertGroup" label="Convert">
+					<button id="numberToObjectTypeButton" label="Number to Object Type" size="large" image="NumberToType" onAction="call_numberToObjectType" />
+					<button id="objectTypeToNumberButton" label="Object Type to Number" size="large" image="TypeToNumber" onAction="call_ObjectTypeStringToNumber" />
+				</group>
+				<group id="navFilterGroup" label="NAV Filter">
+					<button id="navObjectFiltersFromSelectionButton" label="Create Object Filters from Selection" size="large" supertip="Opens in a new worksheet."
+						imageMso="PivotTableBlankRowsRemove" onAction="call_CreateNavisionObjectFiltersFromSelection" />
+					<button id="buildOrFilterButton" label="Build OR Filter from Selection" size="large" imageMso="TableIndexes" onAction="call_BuildOrFilterFromSelection" />
+				</group>
+				<group id="navImportWorksheetGroup" label="Import Worksheet Data">
+					<button id="buildObjectComparisonButton" label="Build Object Comparison" size="large" imageMso="FieldList" onAction="call_BuildObjectComparison" />
+				</group>
+				<group id="textFilesGroup" label="Text Files">
+					<button id="importPathFromTextFilesInFolderButton" label="Import Path from Text Files in Folder" size="large" 
+						imageMso="ReviewShowMarkupMenu" onAction="call_WriteFullPathOfTextFilesInFolderToActiveWks" />
+				</group>
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>
